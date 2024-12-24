@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import expertize from "./assets/Expertize.png"
 import Concerns from "./Concerns";
-import { facebookIcon, instagramIcon, twitterIcon, youtubeIcon } from "./assets/svgs/icons";
+import { WomenIcon, facebookIcon, healthIcon, immunityIcon, instagramIcon, skincareIcon, twitterIcon, youtubeIcon } from "./assets/svgs/icons";
 const DoctorInfo = () => {
   //Read more functionality
   const [expanded, setexpanded] = useState(false);
@@ -73,8 +73,23 @@ const DoctorInfo = () => {
             I Specialize In
           </p>
         </div>
-        <div className="flex ">
-          <img src={expertize} alt="expertize" className="w-9/12 mt-8 ml-8" />
+        <div className="flex justify-center py-4 gap-2 text-sm">
+          <div>
+            {WomenIcon}
+            <p className="font-nunito text-medium mt-1 text-center">Women Health</p>
+          </div>
+          <div>
+            {skincareIcon}
+            <p className="font-nunito text-medium mt-1 text-center">Skin Care</p>
+          </div>
+          <div>
+            {immunityIcon}
+            <p className="font-nunito text-medium mt-1 text-center">Immunity</p>
+          </div>
+          <div>
+            {healthIcon}
+            <p className="font-nunito text-medium mt-1 text-center">Health Care</p>
+          </div>
         </div>
       </div>
       <Concerns/>
